@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack's Wholesale</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script/shopScript.js"></script>
+  
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/logo.png" />
+            <span id="head"></span>
+          </header>
+          <nav>
+            <a href="./home.html">Home</a>
+            <a href="#">About</a>
+            <a href="./shopping.html">Shop</a>
+            <a href="#">Contact</a>
+            <a href="#">Sevices</a>
+    
+          </nav>
+          <div class="divider">
+            <div class="shop_div">
+                <!-- <form  id="saleForm" name="myForm" action="#" onsubmit="validateForm()"> -->
+                <form  id="saleForm" name="myForm" >
+                    <fieldset>
+                      <legend>Customer Form</legend>
+                      <div class="img_form">
+                        <img src="./images/shopping/pic1.webp" alt="broken Image"/>
+                      </div>
+                     
+                      <div class="cust_input">
+                        <p id="p_tshirts">
+                            <label for="tshirts">Number of T-shirts:</label>
+                            <input type="text" name="tshirts" id="tshirts" placeholder="Number of T-shirts" />
+                          </p>
+                          <p id="p_jackets">
+                            <label for="creditCardMonth">Number of Jackets:</label>
+                            <input type="text" id="jackets" placeholder="Number of Jackets" name="jackets">
+                         </p>
+                        <p id="p_caps">
+                            <label for="creditCardYear">Number of Caps: </label>
+                            <input type="text" id="caps" placeholder="Number of Caps" name="caps">
+                            <br>
+                          </p>
+                          <p id="p_name">
+                            <label for="name">Customer Name: </label>
+                            <input type="text" name="name" id="name" placeholder="Customer Name" />
+                          </p>
+                          <p id="p_phone">
+                            <label for="phone">Phone: </label>
+                            <input type="text" aria-describedby="required-description"  name="phone" id="phone" placeholder="Phone Number" />
+                        </p>
+                          <div class="cust_foot" id="modal_footer">
+                            <button class="proceed" type="submit"  onclick="submitForm(event)" onclick="">Generate Receipt</button>
+                            <button type="cancel" class="cancel" onclick="cancelForm()">Cancel</button>
+    
+                            <!-- <input type="submit" value="Submit"> -->
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+        
+            </div>
+            <div class="receipt" id="receipt">
+                <h3>Receipt</h3>
+                <div class="cust_receipt" id="cust_receipt">
+    
+                </div>
+                <hr>
+                <div id="final">
+
+                </div>
+            </div>
+          </div>
+          <div class="quotes">
+            Buying wholesale is like buying the future of your business at a discounted price..
+          </div>
+       
+        <footer>
+        <p>&copy; Jack's Wholesale 2023</p>
+      </footer>
+    </div>
+  
+</body>
+</html>

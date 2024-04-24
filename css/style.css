@@ -1,0 +1,321 @@
+body,html {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /* margin: 0; */
+}
+/* Apply styles to the body element to make it gray */
+body {
+    background-color: white;
+    /* margin: 0;  */
+    /* height: 100vh; */
+  }
+.container{
+    width: 1241px;
+    margin: 0px auto;
+    background: #ffffff;
+}
+  /* *********Start*****Product Listing********************************* */
+  .split  {
+    height: 96%;
+    
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+        top: 4%;
+  }
+  header{
+    /* width: 100%;
+    color: white;
+    height: 100%;
+    background-color: #272626; */
+
+    width: 100%;
+    color: white;
+    height: 60px;
+    background-image: linear-gradient(#000000, #000000);
+
+
+  }
+
+  header img{
+    /* width: 10%;
+    height: 10%;
+    margin: 8px 0 0 10px; */
+    width: 12%;
+    height: 155%;
+    margin: 7px 0 0 10px;
+    float: left;
+  }
+  header p{
+    font-weight: bold;
+  }
+  
+  /* .left {
+    left: 0;
+    background-color: #ffffff;
+    width: 15%;
+  } */
+  
+  .right {
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    width: 20%;
+  }
+  .middle {
+    right: 20%;
+    left: 0%;
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+}
+ 
+h2 {
+  text-align: center;
+}
+
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-align: right;
+  padding: 10px;
+  margin: 0 20px 0 20px;
+}
+
+nav {
+    background: black;
+    height: 100%;
+    padding: 11px;
+    text-align: right;
+}
+main{
+    background: white;
+}
+.about_content
+{
+    padding: 25px;
+    text-align: justify;
+    background: #e5ecf3;
+    font-style: italic;
+    font-family: cursive;
+}
+.box_ul{
+    width: 100%;
+    height: 50%;
+    overflow: auto;
+}
+.li_elm{
+    width: 30%;
+    height: 100%;
+    overflow: auto;
+    display: inline-grid;
+    padding: 2%;
+    background: #e5ecf3;
+    /* margin: 20px; */
+    border: 1px solid #c8d8e8;
+    text-align: justify;
+}
+.li_elm img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.fa-star {  
+    font-size : 50px;  
+    align-content: center;  
+}  
+
+.rating {
+    font-size: 24px;
+  }
+  
+  .star {
+    cursor: pointer;
+    color: #ccc;
+  }
+  
+  .star.filled {
+    color: gold;
+  }
+  .more-info{display: none;}
+
+  #saleForm{
+    font-family: sans-serif;
+  }
+  
+  #saleForm p{
+    font-size: small;
+  }
+  fieldset{
+    padding: 4%;
+  }
+  .cust_content{
+    height: auto;
+    width: 100%;
+  }
+  input{
+    width: 100%;
+  }
+  /* .modal_content{ */
+    /* height: 95%; */
+    /* width: 68%;
+    overflow: auto; */
+  /* } */
+  button{
+    cursor: pointer;
+  }
+
+  #saleForm input {
+    padding: 8px;
+    margin-top: 5px;
+}
+
+#saleForm p {
+    padding: 8px;
+}
+fieldset {
+    padding: 2%;
+    overflow: hidden;
+}
+
+.shop_div{
+    width: 45%;
+    height: 100%;
+    margin: 3% 0 0 3%;
+    background: #f5fbff;
+    float: left;
+}
+.img_form{
+    width: 40%;
+    float: left;
+}
+.img_form img{
+    width: 100%;
+}
+.cust_input{
+    width: 57%;
+    float: right;
+}
+.span_error{
+    color: red;
+    font-size: smaller;
+}
+.receipt{
+    float: right;
+    background: #f5fbff;
+    width: 41%;
+    margin: 3% 3% 0 0;
+    position: relative;
+    border: 1px solid #dadada;
+    padding: 10px;
+}
+.divider{
+    overflow: auto;
+    position: relative;
+    padding: 0px 0 37px 0;
+}
+.divider h3{
+    text-align: center;
+}
+td {
+    padding: 12px;
+}
+#final {
+    width: 63.3%;
+    margin: 0 0 0 37%;
+}
+.shop{
+    float: right;
+    /* right: 66px; */
+    position: relative;
+}
+
+.shop a{
+ 
+    text-decoration: none;
+    color: white;
+  
+}
+p.p_name {
+    font-weight: bold;
+    text-align: center;
+}
+
+.li_elm p {
+    margin: 8px 0 0 0;
+    color: #505050;
+}
+.rating{
+    text-align: center;
+}
+.more-info-button,.less-info-button,.shop {
+    display: inline-block;
+    padding: 7px 13px;
+    background-color: #3498db; /* Button background color */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin:10px 0 0 0;
+}
+
+.more-info-button:hover ,.less-info-button:hover ,.shop:shop{
+    background-color: #2980b9; /* Hover background color */
+    transform: scale(1.05); /* Slight scale increase on hover for a subtle effect */
+}
+.li_elm:nth-child(2){
+    margin: 1% 5% 0 5%;
+}
+.box_ul{
+    padding:0px;
+}
+.cust_receipt td {
+    padding: 12px;
+    width: 36%;
+}
+#final td {
+    padding: 12px;
+    width: 31%;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 1px;
+    text-align: center;
+}
+.proceed{
+    background-color: #4CAF50;
+    color: white;
+    padding: 9px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.cancel{
+    background-color: #f44336;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.quotes{
+    text-align: center;
+    padding: 20px;
+    margin: 10% 0 0 0;
+    border: 1px solid white;
+    background: #002183;
+    color: white;
+}
